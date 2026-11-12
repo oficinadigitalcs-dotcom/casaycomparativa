@@ -1,0 +1,205 @@
+/* Estilos de artículo — misma paleta y tipografía que estilos.css */
+.hero-articulo{
+  position:relative;
+  width:100%;
+  margin:0;
+  background:#1f3f36;
+  overflow:hidden;
+  color:#faf8f5;
+}
+.hero-articulo picture,
+.hero-articulo img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.hero-articulo img{
+  aspect-ratio:16/7;
+  object-fit:cover;
+  object-position:center 45%;
+  min-height:18rem;
+  max-height:32.5rem;
+}
+.hero-articulo__velo{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(15,31,28,.88) 0%, rgba(15,31,28,.55) 38%, rgba(15,31,28,.18) 62%, rgba(15,31,28,.04) 100%);
+  pointer-events:none;
+}
+.hero-articulo__texto{
+  position:absolute;
+  left:0;right:0;bottom:0;
+  padding:3rem 0 1.7rem;
+}
+.hero-kicker{
+  margin:0 0 .45rem;
+  font-size:.78rem;
+  font-weight:600;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#d7e6e0;
+}
+.hero-articulo h1{
+  color:#fff;
+  margin:0 0 .65rem;
+  max-width:22ch;
+  text-wrap:balance;
+  text-shadow:0 1px 16px rgba(0,0,0,.35);
+}
+.hero-articulo .firma{
+  color:#e4ece8;
+  margin:0;
+  font-size:.92rem;
+  text-wrap:balance;
+}
+main:has(.hero-articulo),
+body:has(.hero-articulo) main{
+  padding-top:2.1rem;
+}
+body:has(> .hero-articulo) main{
+  padding-top:2.1rem;
+}
+
+.articulo{
+  font-size:1.04rem;
+}
+.articulo p{
+  max-width:40rem;
+  line-height:1.75;
+  margin:.0 0 1.05rem;
+}
+.articulo h2{
+  color:#1f3f36;
+  font-size:1.28rem;
+  line-height:1.3;
+  margin:2.4rem 0 .7rem;
+  max-width:40rem;
+  text-wrap:balance;
+}
+.articulo ul,
+.articulo ol{
+  max-width:40rem;
+  padding-left:1.25rem;
+  margin:0 0 1.15rem;
+}
+.articulo li{
+  margin:.45rem 0;
+  line-height:1.65;
+}
+.articulo a{color:#2f5d50}
+.articulo a:hover{color:#1f3f36}
+
+.entradilla{
+  max-width:40rem;
+  margin:0 0 1.6rem;
+  padding:.15rem 0 .15rem 1.05rem;
+  border-left:3px solid #2f5d50;
+}
+.entradilla p{
+  font-size:1.14rem;
+  line-height:1.7;
+  color:#1f3f36;
+  margin:0 0 .85rem;
+}
+.entradilla p:last-child{margin-bottom:0}
+.entradilla ul{
+  margin:.4rem 0 0;
+  color:#1f3f36;
+}
+
+.firma{font-size:.9rem;color:#666;margin:-.2rem 0 1.2rem}
+
+.cita-destacada{
+  margin:1.8rem 0;
+  padding:1.15rem 1.3rem 1.15rem 1.25rem;
+  max-width:40rem;
+  background:#fff;
+  border:1px solid #e6e1d9;
+  border-left:4px solid #2f5d50;
+  border-radius:0 12px 12px 0;
+}
+.cita-destacada p{
+  margin:0;
+  font-size:1.12rem;
+  line-height:1.55;
+  color:#1f3f36;
+  font-style:italic;
+}
+.cita-destacada p::before{content:"«"}
+.cita-destacada p::after{content:"»"}
+
+blockquote{
+  margin:1.3rem 0;
+  padding:.85rem 1.15rem;
+  max-width:40rem;
+  background:#fff;
+  border:1px solid #e6e1d9;
+  border-left:4px solid #2f5d50;
+  border-radius:0 12px 12px 0;
+}
+blockquote p{margin:.45rem 0}
+blockquote p:first-child{margin-top:0}
+blockquote p:last-child{margin-bottom:0}
+
+.foto-articulo{
+  margin:1.8rem 0 2rem;
+  max-width:min(100%, 52rem);
+}
+.foto-articulo.ancha{max-width:100%}
+.foto-articulo img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:12px;
+  background:#e6e1d9;
+}
+.foto-articulo figcaption{
+  margin:.5rem .1rem 0;
+  font-size:.86rem;
+  line-height:1.45;
+  color:#666;
+}
+
+hr.separador,
+.articulo hr{
+  border:0;
+  border-top:1px solid #e6e1d9;
+  margin:2.3rem 0;
+  max-width:40rem;
+}
+
+.fuentes{font-size:.88rem;color:#555}
+.fuentes ol{padding-left:1.2rem}
+.fuentes li{margin:.45rem 0}
+
+.datos-oficiales{font-size:.8rem;color:#555;max-width:40rem;margin:1.5rem 0 0;line-height:1.55}
+.datos-oficiales h2{color:#555;font-size:1.05rem;font-weight:600;margin:1.5rem 0 .55rem}
+.datos-oficiales ol{padding-left:1.2rem}
+.datos-oficiales li{margin:.6rem 0}
+.datos-oficiales a{color:#2f5d50}
+.datos-oficiales .salvedades{margin-top:1.1rem}
+
+@media (max-width:700px){
+  .hero-articulo img{
+    min-height:22rem;
+    max-height:none;
+    object-position:center 40%;
+  }
+  .hero-articulo h1{
+    max-width:18ch;
+    font-size:clamp(1.45rem,7.2vw,2rem);
+  }
+  .hero-articulo__texto{padding:2.4rem 0 1.35rem}
+}
+@media (min-width:701px){
+  .hero-articulo h1{max-width:24ch}
+  .hero-articulo.titulo-largo h1{max-width:28ch;font-size:clamp(1.55rem,3.4vw,2.15rem)}
+}
+
+.articulo a,
+.fuentes a,
+.datos-oficiales a{
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+.articulo img{max-width:100%}
