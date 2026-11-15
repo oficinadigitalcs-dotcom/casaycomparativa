@@ -1,0 +1,119 @@
+/* Paleta más viva solo para las páginas de /navidad/regalos/
+   (excepto hasta-20, que no carga esta hoja).
+   Se carga después de navidad.css. No sustituye a navidad.css,
+   estilos.css ni articulo.css. No cambia la cabecera compartida
+   de decoración, frikis ni del hub. */
+
+:root{
+  --regalo-rojo:#b01228;
+  --regalo-rojo-oscuro:#7a0c1b;
+  --regalo-bordo:#4a0b16;
+  --regalo-verde:#0b7a3c;
+  --regalo-verde-oscuro:#085c2d;
+  --regalo-oro:#c9a227;
+  --regalo-oro-claro:#f8e7b0;
+  --regalo-chip:#fde8e4;
+  --regalo-fondo:#fff7f0;
+  --regalo-texto:#3a1518;
+}
+
+body.mundo-regalos{
+  background:var(--regalo-fondo);
+  color:#2b2b2b;
+}
+body.mundo-regalos header{
+  border-bottom:3px solid var(--regalo-rojo);
+}
+body.mundo-regalos .marca{color:var(--regalo-rojo-oscuro)}
+body.mundo-regalos nav a:hover,
+body.mundo-regalos nav a[aria-current="page"]{color:var(--regalo-rojo)}
+
+body.mundo-regalos h1,
+body.mundo-regalos h2,
+body.mundo-regalos .regalo h3,
+body.mundo-regalos .resumen h3{
+  color:var(--regalo-rojo-oscuro);
+}
+body.mundo-regalos h2{color:var(--regalo-verde)}
+
+body.mundo-regalos .indice a,
+body.mundo-regalos .navidad-subnav a{
+  background:var(--regalo-chip);
+  color:var(--regalo-rojo-oscuro);
+}
+body.mundo-regalos .indice a:hover,
+body.mundo-regalos .navidad-subnav a:hover{
+  background:var(--regalo-oro-claro);
+  color:var(--regalo-rojo-oscuro);
+}
+
+body.mundo-regalos .aviso{
+  border-left-color:var(--regalo-oro);
+}
+body.mundo-regalos .nota-entrega{
+  background:#fdecc8;
+  color:#3a2a10;
+}
+
+body.mundo-regalos .boton{
+  background:var(--regalo-rojo);
+  color:#fff !important;
+}
+body.mundo-regalos .boton:hover{background:var(--regalo-rojo-oscuro)}
+body.mundo-regalos .boton-secundario{
+  background:#fff;
+  color:var(--regalo-rojo) !important;
+  border:1px solid var(--regalo-rojo);
+}
+body.mundo-regalos .boton-secundario:hover{background:var(--regalo-chip)}
+
+body.mundo-regalos .badge{
+  background:var(--regalo-chip);
+  color:var(--regalo-rojo-oscuro);
+}
+body.mundo-regalos .badge.favorito{
+  background:var(--regalo-rojo);
+  color:#fff;
+}
+body.mundo-regalos .regalo.favorito{
+  border-color:var(--regalo-rojo);
+  box-shadow:0 0 0 2px rgba(176,18,40,.18);
+}
+body.mundo-regalos .regalo .precio,
+body.mundo-regalos .resumen .precio{
+  color:var(--regalo-rojo-oscuro);
+}
+
+body.mundo-regalos .tarjeta:hover{border-color:var(--regalo-rojo)}
+body.mundo-regalos .tarjeta strong{color:var(--regalo-rojo-oscuro)}
+body.mundo-regalos .pronto{
+  background:var(--regalo-oro-claro);
+  color:var(--regalo-rojo-oscuro);
+}
+
+body.mundo-regalos .tabla-comp th{
+  background:var(--regalo-oro-claro);
+  color:var(--regalo-rojo-oscuro);
+}
+
+body.mundo-regalos .hero-articulo{background:var(--regalo-bordo)}
+body.mundo-regalos .hero-articulo__velo{
+  background:linear-gradient(to top, rgba(74,11,22,.88) 0%, rgba(74,11,22,.52) 38%, rgba(74,11,22,.16) 62%, rgba(74,11,22,.04) 100%);
+}
+body.mundo-regalos .hero-kicker{color:var(--regalo-oro-claro)}
+body.mundo-regalos .hero-articulo h1{color:#fff}
+body.mundo-regalos .hero-articulo .firma{color:#f3e4e6}
+
+body.mundo-regalos .entradilla{border-left-color:var(--regalo-rojo)}
+body.mundo-regalos .entradilla p,
+body.mundo-regalos .entradilla ul{color:var(--regalo-texto)}
+body.mundo-regalos .articulo a{color:var(--regalo-rojo)}
+body.mundo-regalos .articulo a:hover{color:var(--regalo-rojo-oscuro)}
+body.mundo-regalos .regalo{background:#fffdf9}
+body.mundo-regalos .regalo-media img{background:#fff7f0}
+
+/* En móvil el recorte recorta izquierda y derecha: acercamos las cajas. */
+body.mundo-regalos .hero-articulo img{object-position:28% 52%}
+@media (min-width:720px){
+  body.mundo-regalos .hero-articulo img{object-position:36% 50%}
+}
