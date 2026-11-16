@@ -16,12 +16,13 @@
 <meta property="og:image:height" content="800">
 <meta property="og:image:alt" content="Nuestra cafetera superautomática negra con una taza de café y una jarrita de acero sobre una encimera oscura">
 <link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="portada.css">
 </head>
-<body>
+<body class="portada">
 <header><div class="contenedor">
-<a class="marca" href="./">Casa y comparativa</a>
+<a class="marca" href="./">Casa <span>y</span> comparativa</a>
 <nav aria-label="Secciones"><ul>
-<li><a href="./" aria-current="page">Inicio</a></li>
+<li><a href="./ofertas/">Ofertas</a></li>
 <li><a href="./aspiradoras/">Aspiradoras</a></li>
 <li><a href="./cafeteras/">Cafeteras</a></li>
 <li><a href="./televisores/">Televisores</a></li>
@@ -30,27 +31,69 @@
 <li><a href="./mascotas/">Mascotas</a></li>
 <li><a href="./navidad/">Navidad</a></li>
 </ul></nav></div></header>
-<main><div class="contenedor">
-<h1>Casa y comparativa</h1>
-<p class="intro">Comparativas honestas de productos para el hogar, contadas desde el uso real. Empezamos por los robots aspiradores.</p>
-<div class="tarjetas">
-<a class="tarjeta" href="ofertas/"><strong>Las ofertas de hoy</strong><span>Rebajas de Amazon con buenas opiniones y Prime, comprobadas cada día</span></a>
-<a class="tarjeta" href="navidad/"><strong>Navidad 2026</strong><span>Decoración, regalos e ideas para todos los bolsillos</span></a>
-<a class="tarjeta" href="articulos/historia-del-precio/"><strong>Artículos</strong><span>De dónde sale el precio que ves en la tienda</span></a>
-<a class="tarjeta" href="articulos/historia-de-los-precios/"><strong>Artículos</strong><span>La historia de los precios: por qué todo cuesta casi el doble que en el año 2000</span></a>
-<a class="tarjeta" href="articulos/gasolina-cita-medico/"><strong>Artículos</strong><span>La gasolina barata que pagamos con la cita del médico</span></a>
-<a class="tarjeta" href="articulos/como-aprendimos-a-poner-valor/"><strong>Artículos</strong><span>¿Cómo aprendimos a ponerle valor a las cosas?</span></a>
-<a class="tarjeta" href="articulos/cuando-el-oro-se-convirtio-en-dinero/"><strong>Artículos</strong><span>Cuando el oro se convirtió en dinero</span></a>
-<a class="tarjeta" href="articulos/cuando-el-dinero-paso-a-basarse-en-la-confianza/"><strong>Artículos</strong><span>Cuando el dinero pasó a basarse en la confianza</span></a>
-<a class="tarjeta" href="aspiradoras/"><strong>Aspiradoras</strong><span>Robots aspiradores · Próximamente</span></a>
-<a class="tarjeta" href="cafeteras/"><strong>Cafeteras</strong><span>Superautomáticas y de cápsulas, con opciones económicas</span></a>
-<a class="tarjeta" href="televisores/"><strong>Televisores</strong><span>Seis televisores 4K, comparados por tamaño, panel, sistema y precio, con datos del 15 de noviembre de 2026</span></a>
-<a class="tarjeta" href="portatiles/"><strong>Portátiles</strong><span>Un MacBook Air verificado, comparado por procesador, memoria, pantalla y autonomía</span></a>
-<a class="tarjeta" href="almohadas/"><strong>Almohadas</strong><span>Comparativa de las más vendidas, con ofertas de Amazon</span></a>
-<a class="tarjeta" href="mascotas/"><strong>Mascotas</strong><span>El rincón de tu mascota: areneros, árboles, bebederos y comederos</span></a>
+
+<section class="heroe"><div class="contenedor">
+<div>
+<p class="antetitulo">Economía doméstica · comparativas</p>
+<h1>Antes de comprar para tu casa, compáralo con calma</h1>
+<p class="sub">Comparativas honestas de productos para el hogar, contadas desde el uso real.</p>
+<div class="botones">
+<a class="boton-portada principal" href="./ofertas/">Ver las ofertas de hoy →</a>
+<a class="boton-portada secundario" href="#comparativas">Ver comparativas</a>
 </div>
-</div></main>
-<footer><div class="contenedor">Casa y comparativa · Sitio en construcción</div></footer>
+</div>
+<figure><img src="cafeteras/img/cafetera-casa-cabecera.jpg" alt="Nuestra cafetera superautomática negra con una taza de café y una jarrita de acero sobre una encimera oscura"><figcaption>Foto de la sección Cafeteras.</figcaption></figure>
+</div></section>
+
+<div class="confianza"><div class="contenedor"><ul>
+<li><span class="ico">✓</span><div><b>Desde el uso real</b>Productos que tenemos en casa, cuando los tenemos</div></li>
+<li><span class="ico">📅</span><div><b>Datos con fecha</b>Cada precio dice cuándo lo miramos</div></li>
+<li><span class="ico">★</span><div><b>Ofertas filtradas</b>4,3 o más, vendidas y enviadas por Amazon</div></li>
+<li><span class="ico">ℹ</span><div><b>Sin letra pequeña</b>Aviso de afiliados claro donde hay enlaces</div></li>
+</ul></div></div>
+
+<main class="contenedor">
+<section class="bloque">
+<h2>Lo de esta semana</h2>
+<div class="destacadas">
+<a class="grande blanco" href="./ofertas/"><img src="ofertas/img/xiaomi-s40c-b0f4k1h6x5-5nov.jpg" alt="Robot aspirador Xiaomi S40C, una de las ofertas de hoy"><div class="capa"><span class="etiqueta">Hoy</span><strong>Las ofertas de hoy</strong><span class="t">Rebajas de Amazon con buenas opiniones y Prime, comprobadas cada día</span></div></a>
+<a class="grande" href="./navidad/"><img src="navidad/img/cabecera-regalos.jpg" alt="Regalos envueltos en papel kraft, verde y granate"><div class="capa"><span class="etiqueta">Navidad 2026</span><strong>Regalos e ideas para todos los bolsillos</strong><span class="t">Decoración, regalos por presupuesto y para cada persona</span></div></a>
+</div>
+</section>
+
+<section class="bloque" id="comparativas">
+<h2>Comparativas para tu casa</h2>
+<p class="lead">Lo que miramos antes de recomendar algo: precio, ficha, opiniones y, cuando lo tenemos, cómo funciona de verdad.</p>
+<div class="rejilla">
+<a class="tarjeta-foto" href="./cafeteras/"><img class="contener" src="cafeteras/img/delonghi-magnifica-s-filtro-b07plxpcx3.jpg" alt="Cafetera superautomática De'Longhi Magnifica S"><div class="cuerpo"><span class="meta">Actualizado 15 nov 2026</span><strong>Cafeteras</strong><span>Superautomáticas y de cápsulas, con opciones económicas</span></div></a>
+<a class="tarjeta-foto" href="./televisores/"><img class="contener" src="televisores/img/lg-55nu800.jpg" alt="Televisor LG 55NU800"><div class="cuerpo"><span class="meta">Datos del 15 nov 2026</span><strong>Televisores</strong><span>Seis televisores 4K, comparados por tamaño, panel, sistema y precio</span></div></a>
+<a class="tarjeta-foto" href="./aspiradoras/"><img class="contener" src="aspiradoras/img/roomba.jpg" alt="Robot aspirador iRobot Roomba"><div class="cuerpo"><span class="meta">Robots aspiradores</span><strong>Aspiradoras</strong><span>Robots aspiradores: lo que hemos visto de verdad en casa</span></div></a>
+<a class="tarjeta-foto" href="./almohadas/"><img src="almohadas/img/cabecera.jpg" alt="Dormitorio con pared verde salvia y cama de colcha beige"><div class="cuerpo"><span class="meta">Con ofertas de Amazon</span><strong>Almohadas</strong><span>Comparativa de las más vendidas</span></div></a>
+<a class="tarjeta-foto" href="./mascotas/"><img src="mascotas/arboles-gatos/img/arbol-gatos-casa.jpg" style="object-position:center 30%" alt="Nuestro árbol rascador con dos gatos descansando"><div class="cuerpo"><span class="meta">Areneros, árboles, bebederos, comederos</span><strong>Mascotas</strong><span>El rincón de tu mascota</span></div></a>
+<a class="tarjeta-foto" href="./portatiles/"><img class="contener" src="portatiles/img/macbook-air-m5.jpg" alt="MacBook Air"><div class="cuerpo"><span class="meta">Verificado</span><strong>Portátiles</strong><span>Un MacBook Air comparado por procesador, memoria, pantalla y autonomía</span></div></a>
+</div>
+</section>
+
+<section class="bloque articulos">
+<h2>Para entender lo que pagas</h2>
+<p class="lead">Artículos sin prisa sobre el dinero de casa: de dónde salen los precios y por qué cambian.</p>
+<div class="rejilla">
+<a class="tarjeta-foto" href="./articulos/gasolina-cita-medico/"><img src="articulos/gasolina-cita-medico/cabecera.jpg" alt="Mano repostando en una gasolinera al atardecer"><div class="cuerpo"><span class="meta">11 nov 2026</span><strong>La gasolina barata que pagamos con la cita del médico</strong><span class="gancho">«Hay un recibo que nadie te enseña. El surtidor no lo imprime.»</span></div></a>
+<a class="tarjeta-foto" href="./articulos/historia-de-los-precios/"><img src="articulos/historia-de-los-precios/cabecera.jpg" alt="Cabecera del artículo sobre la historia de los precios"><div class="cuerpo"><span class="meta">Inflación</span><strong>Por qué todo cuesta casi el doble que en el año 2000</strong><span class="gancho">«¿Te ha pasado abrir el ticket del súper y pensar “esto antes no salía tan caro”»</span></div></a>
+<a class="tarjeta-foto" href="./articulos/historia-del-precio/"><img src="articulos/historia-del-precio/cabecera.jpg" alt="Cabecera del artículo sobre el origen del precio"><div class="cuerpo"><span class="meta">Noviembre 2026</span><strong>¿De dónde sale el precio que ves en la tienda?</strong><span class="gancho">«Durante muchísimo tiempo el precio no estaba escrito: se discutía.»</span></div></a>
+</div>
+<div class="serie">
+<h3>Serie: la historia del dinero</h3>
+<p>Tres capítulos que se leen en orden.</p>
+<ol>
+<li><a href="./articulos/como-aprendimos-a-poner-valor/"><img src="articulos/como-aprendimos-a-poner-valor/cabecera.jpg" alt=""><div><small>Capítulo 1</small>¿Cómo aprendimos a ponerle valor a las cosas?</div></a></li>
+<li><a href="./articulos/cuando-el-oro-se-convirtio-en-dinero/"><img src="articulos/cuando-el-oro-se-convirtio-en-dinero/cabecera.jpg" alt=""><div><small>Capítulo 2</small>Cuando el oro se convirtió en dinero</div></a></li>
+<li><a href="./articulos/cuando-el-dinero-paso-a-basarse-en-la-confianza/"><img src="articulos/cuando-el-dinero-paso-a-basarse-en-la-confianza/cabecera.jpg" alt=""><div><small>Capítulo 3</small>Cuando el dinero pasó a basarse en la confianza</div></a></li>
+</ol>
+</div>
+</section>
+</main>
+<footer><div class="contenedor">Casa y comparativa · Comparativas honestas de productos para el hogar · <a href="./">casaycomparativa.com</a></div></footer>
 <script data-goatcounter="https://casaycomparativa.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
