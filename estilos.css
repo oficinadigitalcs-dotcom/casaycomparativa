@@ -19,3 +19,26 @@ h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.2;color:#1f3f36;margin:0 0 .
 .tarjeta span{font-size:.92rem;color:#666}
 .pronto{display:inline-block;background:#e9f1ee;color:#2f5d50;border-radius:999px;padding:.3rem .9rem;font-weight:600}
 footer{border-top:1px solid #e6e1d9;padding:1.25rem 0;font-size:.85rem;color:#777;background:#fff}
+
+
+/* Bloque reutilizable «Ofertas de hoy en Amazon» (comparativas y portada). */
+.ofertas-hoy{background:#fff;border:1px solid #e6e1d9;border-left:4px solid #c2703d;border-radius:12px;padding:1rem 1.15rem 1.15rem;margin:1.2rem 0 1.6rem}
+.ofertas-hoy__titulo{color:#1f3f36;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:1.25rem;font-weight:700;line-height:1.3;margin:0 0 .35rem;max-width:none}
+.ofertas-hoy__fecha{font-size:.84rem;color:#666;margin:0 0 .9rem}
+.ofertas-hoy__modelos{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+/* Si solo hay una oferta, la tarjeta no se estira a todo el ancho. */
+.ofertas-hoy__modelos:has(> .ofertas-hoy__card:only-child){grid-template-columns:minmax(200px,280px)}
+.ofertas-hoy__card{background:#faf8f5;border:1px solid #e6e1d9;border-radius:12px;padding:1rem;display:flex;flex-direction:column}
+.ofertas-hoy__card img,.ofertas-hoy__sin-foto{display:block;width:100%;height:160px;object-fit:contain;background:#fff;border-radius:8px;margin-bottom:.7rem}
+.ofertas-hoy__sin-foto{display:flex;align-items:center;justify-content:center;color:#8a6d3b;font-style:italic;font-size:.86rem}
+.ofertas-hoy__card h3{color:#2f5d50;margin:.15rem 0 .35rem;font-size:1rem;font-weight:700;line-height:1.35}
+.ofertas-hoy .chips{display:flex;flex-wrap:wrap;gap:.3rem;margin:.1rem 0 .3rem}
+.ofertas-hoy .chip{display:inline-block;background:#e9f1ee;color:#1f3f36;border-radius:999px;padding:.1rem .55rem;font-size:.76rem;font-weight:600}
+.ofertas-hoy .chip.oferta{background:#b3261e;color:#fff}
+.ofertas-hoy__card .precio{font-weight:700;color:#1f3f36;font-size:1.15rem;margin:.2rem 0}
+.ofertas-hoy__card .precio small{display:block;font-weight:400;color:#777;font-size:.78rem}
+.ofertas-hoy__card .vendedor{font-size:.86rem;color:#555;margin:.15rem 0 .5rem}
+.ofertas-hoy a.boton{display:block;text-align:center;background:#2f5d50;color:#fff;text-decoration:none;border-radius:8px;padding:.55rem .9rem;font-weight:600;margin-top:auto}
+.ofertas-hoy a.boton:hover{background:#1f3f36;color:#fff}
+.ofertas-hoy__mas{margin:.9rem 0 0;font-size:.95rem}
+.ofertas-hoy__mas a{color:#2f5d50;font-weight:600}
