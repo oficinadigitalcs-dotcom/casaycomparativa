@@ -42,3 +42,13 @@ footer{border-top:1px solid #e6e1d9;padding:1.25rem 0;font-size:.85rem;color:#77
 .ofertas-hoy a.boton:hover{background:#1f3f36;color:#fff}
 .ofertas-hoy__mas{margin:.9rem 0 0;font-size:.95rem}
 .ofertas-hoy__mas a{color:#2f5d50;font-weight:600}
+
+/* Bloque reutilizable «También en TikTok» (todas las páginas de contenido). */
+.bloque-tiktok{background:#fff;border:1px solid #e6e1d9;border-left:4px solid #2f5d50;border-radius:12px;padding:1rem 1.15rem;margin:2.2rem 0 1.4rem;max-width:40rem}
+.bloque-tiktok p.bloque-tiktok__titulo{max-width:none;color:#1f3f36;font-weight:700;font-size:1.05rem;line-height:1.3;margin:0 0 .3rem}
+.bloque-tiktok p.bloque-tiktok__texto{max-width:none;font-size:.95rem;color:#444;margin:0 0 .75rem;line-height:1.55}
+.bloque-tiktok p.bloque-tiktok__nota{max-width:none;font-size:.82rem;color:#666;margin:-.35rem 0 .75rem;line-height:1.45}
+.bloque-tiktok p.bloque-tiktok__enlaces{max-width:none;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1rem;margin:0}
+.bloque-tiktok a.bloque-tiktok__boton{display:inline-block;background:#2f5d50;color:#faf8f5;text-decoration:none;border-radius:8px;padding:.45rem .95rem;font-weight:600;font-size:.92rem}
+.bloque-tiktok a.bloque-tiktok__boton:hover{background:#1f3f36;color:#fff}
+.bloque-tiktok a.bloque-tiktok__perfil{color:#2f5d50;font-weight:600;font-size:.92rem}
